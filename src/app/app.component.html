@@ -4,27 +4,33 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span>Planets App</span>
+  
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
+  <button mat-icon-button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="login">
+    <mat-icon>account_circle</mat-icon>
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
+
 </mat-toolbar>
 
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <mat-icon>dialpad</mat-icon>
-    <span>Redial</span>
+  <button mat-menu-item routerLink="/home">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
   </button>
-  <button mat-menu-item disabled>
-    <mat-icon>voicemail</mat-icon>
-    <span>Check voice mail</span>
+  <button mat-menu-item routerLink="/planets">
+    <mat-icon>view_list</mat-icon>
+    <span>Planets List</span>
   </button>
+  <button mat-menu-item routerLink="/contact">
+    <mat-icon>contact_phone</mat-icon>
+    <span>Contact</span>
+  </button>
+</mat-menu>
+
+<mat-menu #login="matMenu">
   <button mat-menu-item>
-    <mat-icon>notifications_off</mat-icon>
-    <span>Disable alerts</span>
+    <mat-icon>login</mat-icon>
+    <span>Login</span>
   </button>
 </mat-menu>
 
