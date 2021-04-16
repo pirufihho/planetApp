@@ -10,6 +10,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
 import { PlanetsComponent } from './planets/planets.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -35,7 +37,9 @@ import { DialogElementsExampleDialog } from './dialog-elements-example-dialog';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule
   ],  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [DialogElementsExampleDialog]
