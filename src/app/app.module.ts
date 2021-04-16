@@ -8,17 +8,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
 import { PlanetsComponent } from './planets/planets.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DialogElementsExampleDialog } from './dialog-elements-example-dialog';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanetsComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    DialogElementsExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -29,8 +33,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatMenuModule,
     HttpClientModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatDialogModule
   ],  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DialogElementsExampleDialog]
 })
 export class AppModule { }

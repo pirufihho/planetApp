@@ -2,3 +2,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.formInputs{
+    width: 50%;
+    padding-left: 1%;
+}
+
+.formPadding{
+    padding-left: 1%;
+}
+
+#sendButton{
+    width: 20%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .mat-card{
+    background: aliceblue;
+    width: 80%;
+    min-height: 60%;
+    margin-top: 4%;
+    margin-left: 8%;
+  }
+
+  .loginInputs{
+      margin-top: 5%;
+  }

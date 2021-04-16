@@ -1,47 +1,29 @@
-<mat-card>
 
-    <form class="example-form">
-
-        <table class="example-full-width " cellspacing="0">
-        <tr>
-          <td>
-          <mat-form-field class="example-full-width formInputs">
+<h2 class="formPadding">
+  Contact Form
+</h2>
+    <form >
+          <mat-form-field class="formInputs">
             <mat-label>Name</mat-label>
             <input matInput placeholder="Enter your Name here">
           </mat-form-field>
-        </td>
-          <td>
-        </tr>
-        </table>
 
-        <table class="example-full-width" cellspacing="0">
-            <tr>
-            <td>
-            <mat-form-field class="example-full-width formInputs">
+            <mat-form-field class="formInputs">
               <mat-label>Email</mat-label>
               <input matInput placeholder="Enter your Email here">
-            </mat-form-field></td>
-            <td>
-          </tr>
-        </table>
-      
-        <table class="example-full-width" cellspacing="0">
-            <tr>
-            <td>
-          <mat-form-field class="example-full-width formInputs">
+            </mat-form-field>
+
+    
+          <mat-form-field class="formInputs">
             <mat-label>Message</mat-label>
             <textarea matInput placeholder="Enter your question here"></textarea>
           </mat-form-field>
-          <td>
-        </tr>
-      </table>
+
+        <div class="formPadding">
+          <button mat-raised-button color="primary" id="sendButton">Send</button>
+        </div>
+
       
      
       </form>
       
-      
-      <!-- Copyright 2020 Google LLC. All Rights Reserved.
-          Use of this source code is governed by an MIT-style license that
-          can be found in the LICENSE file at http://angular.io/license -->
-    
-    </mat-card>

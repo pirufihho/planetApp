@@ -19,7 +19,7 @@
   </button>
   <button mat-menu-item routerLink="/planets">
     <mat-icon>view_list</mat-icon>
-    <span>Planets List</span>
+    <span>Planets</span>
   </button>
   <button mat-menu-item routerLink="/contact">
     <mat-icon>contact_phone</mat-icon>
@@ -28,10 +28,12 @@
 </mat-menu>
 
 <mat-menu #login="matMenu">
-  <button mat-menu-item>
+  <button mat-menu-item (click)="openDialog()">
     <mat-icon>login</mat-icon>
     <span>Login</span>
   </button>
 </mat-menu>
 
-<router-outlet></router-outlet>
+<mat-card>
+  <router-outlet></router-outlet>
+</mat-card>
