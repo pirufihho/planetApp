@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .formInputs{
-    width: 50%;
+    width: 55%;
     padding-left: 1%;
 }
 
@@ -29,7 +29,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
 
   .loginInputs{
-      margin-top: 5%;
+    margin-left: 5%;
   }
+  
+  .custom-modalbox {
+    mat-dialog-container {
+        padding: 0;
+    }
+}
+
+.matDialogActions{
+    margin-bottom: 0px !important;
+    padding-left: 35% !important;
+}
+
+.formPadding2{
+    padding-left: 40%;
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

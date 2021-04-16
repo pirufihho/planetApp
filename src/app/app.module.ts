@@ -12,6 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { PlanetsComponent } from './planets/planets.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
@@ -43,6 +44,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatDialogModule,
     MatTableModule,
     MatSortModule,
+    MatSnackBarModule,
     NgbModule
   ],  providers: [],
   bootstrap: [AppComponent],

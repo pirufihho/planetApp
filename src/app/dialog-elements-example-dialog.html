@@ -1,13 +1,18 @@
-<h1 mat-dialog-title>Login</h1>
+<h1 mat-dialog-title class="formPadding2">Login</h1>
 <div mat-dialog-content>
-    <div class="loginInputs">
-    <input matInput placeholder="Email" type="email" >
-</div>
-<div class="loginInputs">
-    <input matInput placeholder="Password" type="password" >
-</div>
+    <mat-form-field class="loginInputs">
+        <input matInput
+                placeholder="Email"
+               formControlName="Email">
+    </mat-form-field>
 
-<div mat-dialog-actions>
-    <button mat-button (click)="onNoClick()">Cancel</button>
-    <button mat-button (click)="onNoClick()">Login</button>
+<mat-form-field class="loginInputs">
+    <input matInput
+            placeholder="password"
+           formControlName="password" type="password">
+</mat-form-field>
+
+<div mat-dialog-actions class="matDialogActions">
+    <button mat-raised-button color="primary" (click)="onNoClick()">Cancel</button>
+    <button mat-raised-button color="warn"(click)="onYesClick()">Login</button>
 </div>

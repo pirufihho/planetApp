@@ -12,7 +12,11 @@ export class AppComponent {
   title = 'qbeyondProject';
 
   openDialog() {
-    this.dialog.open(DialogElementsExampleDialog);
+    this.dialog.open(DialogElementsExampleDialog,{
+      width: '35%',
+      height: '40%',
+      panelClass: 'custom-modalbox'
+    });
   }
 }
 
