@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DialogElementsExampleDialog } from './dialog-elements-example-dialog';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { DialogElementsExampleDialog } from './dialog-elements-example-dialog';
     PlanetsComponent,
     HomeComponent,
     ContactComponent,
-    DialogElementsExampleDialog
+    DialogElementsExampleDialog,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { DialogElementsExampleDialog } from './dialog-elements-example-dialog';
     MatButtonModule,
     MatDialogModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    NgbModule
   ],  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [DialogElementsExampleDialog]
