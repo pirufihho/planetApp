@@ -1,12 +1,14 @@
 <mat-toolbar>
-  
-  <button  [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+
+  <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon"
+    aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
   <span>Planets App</span>
-  
+
   <span class="example-spacer"></span>
-  <button mat-icon-button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="login">
+  <button mat-icon-button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+    [matMenuTriggerFor]="login">
     <mat-icon>account_circle</mat-icon>
   </button>
 
@@ -34,6 +36,16 @@
   </button>
 </mat-menu>
 
+<!-- Content -->
 <mat-card>
   <router-outlet></router-outlet>
 </mat-card>
+<!-- Content -->
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">Flavio Valle
+    <a href="https://www.linkedin.com/in/flavio-nicol%C3%A1s-valle-1a939722/"> Linkedin Profile</a>
+  </div>
+</footer>
+<!-- Footer -->

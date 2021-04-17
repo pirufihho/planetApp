@@ -6,9 +6,9 @@ import { PlanetsComponent } from './planets/planets.component';
 
 
 const routes: Routes = [
-  { path: '',    component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'planets', component: PlanetsComponent },
-  { path: 'home',    component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
 ];
 

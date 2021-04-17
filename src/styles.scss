@@ -47,5 +47,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding-left: 40%;
 }
 
+.carousel{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
